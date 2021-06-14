@@ -4,7 +4,6 @@
 
 # AR Gallery
 
-![GitHub repo size](https://img.shields.io/github/repo-size/Akash-Ramjyothi/AR-Gallery?color=yellow)
 ## 📜 Description:
 AR (Augmented Reality) Gallery is an Augmented Reality based Photo Viewer. It stimulates the perspective or point of vision of a real-time gallery. The AR Gallery is recognizable for mobile devices and can be seen by opening the app and aiming the camera of mobile phone or tablet at a flat surface. The images changes according to the movements of the mobile device used for viewing.
 
