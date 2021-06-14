@@ -1,8 +1,8 @@
+<h1 align="center">AR Gallery</h1>
+
 <p align="center">
 <img src="https://user-images.githubusercontent.com/54114888/121840426-da84ee80-ccf9-11eb-8de9-53c2d76d67a5.png" width=250px height=250px>
 </p>
-
-# AR Gallery
 
 ## 📜 Description:
 AR (Augmented Reality) Gallery is an Augmented Reality based Photo Viewer. It stimulates the perspective or point of vision of a real-time gallery. The AR Gallery is recognizable for mobile devices and can be seen by opening the app and aiming the camera of mobile phone or tablet at a flat surface. The images changes according to the movements of the mobile device used for viewing.
