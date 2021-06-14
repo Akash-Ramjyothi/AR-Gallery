@@ -1,0 +1,108 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion '27.0.3'
+    defaultConfig {
+        applicationId "com.sumera.argallery.unity"
+        minSdkVersion 24
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        debug {
+            minifyEnabled false
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    androidExtensions {
+        experimental = true
+    }
+}
+
+dependencies {
+    // Unity ARGallery module
+    implementation(name: 'argalleryunity', ext: 'aar')
+    implementation(name: 'arcore_client', ext: 'aar')
+    implementation(name: 'google_ar_required', ext: 'aar')
+    implementation(name: 'unityandroidpermissions', ext: 'aar')
+    implementation(name: 'unitygar', ext: 'aar')
+
+    // Kotlin
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    // Kotlin extension
+    implementation "androidx.core:core-ktx:$rootProject.ext.ANDROID_KTX"
+
+    // RxJava
+    implementation "io.reactivex.rxjava2:rxjava:$rootProject.ext.RX_JAVA"
+    implementation "io.reactivex.rxjava2:rxkotlin:$rootProject.ext.RX_KOTLIN"
+    implementation "io.reactivex.rxjava2:rxandroid:$rootProject.ext.RX_ANDROID"
+
+    // RxBinding
+    implementation "com.jakewharton.rxbinding2:rxbinding-kotlin:$rootProject.ext.RX_BINDING"
+    implementation "com.jakewharton.rxbinding2:rxbinding-support-v4-kotlin:$RX_BINDING"
+    implementation "com.jakewharton.rxbinding2:rxbinding-design-kotlin:$RX_BINDING"
+    implementation "com.jakewharton.rxbinding2:rxbinding-appcompat-v7-kotlin:$rootProject.ext.RX_BINDING"
+    implementation "com.jakewharton.rxbinding2:rxbinding-recyclerview-v7-kotlin:$rootProject.ext.RX_BINDING"
+
+    //Kentico Cloud Delivery SDK
+    implementation 'com.kenticocloud:delivery-rx:2.0.1'
+
+    // Permissions
+    implementation 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.5@aar'
+
+    // Support libraries
+    implementation "com.android.support:cardview-v7:$rootProject.ext.SUPPORT_LIBRARY_VERSION"
+    implementation "com.android.support:design:$rootProject.ext.SUPPORT_LIBRARY_VERSION"
+    implementation "com.android.support:appcompat-v7:$rootProject.ext.SUPPORT_LIBRARY_VERSION"
+    implementation "com.android.support:recyclerview-v7:$rootProject.ext.SUPPORT_LIBRARY_VERSION"
+    implementation "com.android.support.constraint:constraint-layout:$rootProject.ext.CONSTRAINT_LAYOUT"
+
+    // Dependency injection
+    implementation "com.google.dagger:dagger:$rootProject.ext.DAGGER_VERSION"
+    implementation "com.google.dagger:dagger-android-support:$rootProject.ext.DAGGER_VERSION"
+    kapt "com.google.dagger:dagger-compiler:$rootProject.ext.DAGGER_VERSION"
+    kapt "com.google.dagger:dagger-android-processor:$rootProject.ext.DAGGER_VERSION"
+
+    // Mvi architecture
+    implementation "com.github.SumeraMartin:koreactor:$rootProject.ext.KOREACTOR_VERSION"
+
+    // Logging
+    implementation "com.github.ajalt:timberkt:$rootProject.ext.TIMBERKT_VERSION"
+
+    // Networking
+    implementation "com.squareup.retrofit2:retrofit:$rootProject.ext.RETROFIT_VERSION"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$rootProject.ext.RETROFIT_VERSION"
+
+    // Image loader
+    implementation "com.github.bumptech.glide:glide:$rootProject.ext.GLIDE_VERSION"
+    kapt "com.github.bumptech.glide:compiler:$rootProject.ext.GLIDE_VERSION"
+
+    // UI
+    implementation "com.yarolegovich:discrete-scrollview:$rootProject.ext.DISCRETE_SCROLL_VIEW_VERSION"
+    implementation "com.wang.avi:library:$rootProject.ext.AVLOADING_INDICATOR_VERSION"
+    implementation "com.alexvasilkov:gesture-views:$rootProject.ext.GESTURE_VIEWS_VERSION"
+    implementation "com.sothree.slidinguppanel:library:$rootProject.ext.SLIDING_UP_PANNEL_VERSION"
+    implementation "com.xw.repo:bubbleseekbar:$rootProject.ext.BUBBLESEEKBAR_VERSION-lite"
+    implementation "com.appyvet:materialrangebar:1.4.1"
+
+    // Data persistence
+    implementation "android.arch.persistence.room:rxjava2:$rootProject.ext.ROOM_VERSION"
+    implementation "android.arch.persistence.room:runtime:$rootProject.ext.ROOM_VERSION"
+    kapt "android.arch.persistence.room:compiler:$rootProject.ext.ROOM_VERSION"
+
+    // Testing
+    testImplementation "org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version"
+    testImplementation "com.nhaarman:mockito-kotlin:1.5.0"
+    testImplementation 'com.github.Plastix.RxSchedulerRule:rx2:1.0.2'
+}
