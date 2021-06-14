@@ -1,15 +1,15 @@
 <p align="center">
-<img src="https://user-images.githubusercontent.com/54114888/121815685-4719d200-cc95-11eb-8242-a66f89493308.png">
+<img src="https://user-images.githubusercontent.com/54114888/121840426-da84ee80-ccf9-11eb-8de9-53c2d76d67a5.png" width=250px height=250px>
 </p>
 
-# Filter-Inator
+# AR Gallery
 
-![GitHub repo size](https://img.shields.io/github/repo-size/Akash-Ramjyothi/Filter-Inator?color=yellow)
+![GitHub repo size](https://img.shields.io/github/repo-size/Akash-Ramjyothi/AR-Gallery?color=yellow)
 ## 📜 Description:
-Filter-Inator is a Face-Filter android application based on Augmented Reality. The app projects certain 3D models as Filters on top of the face when detected by the rear camera. AR face filters are implemented using face tracking technique that track the position of face landmarks and a 3D rendering engine that displays the AR filter the way the user sees it.
+AR (Augmented Reality) Gallery is an Augmented Reality based Photo Viewer. It stimulates the perspective or point of vision of a real-time gallery. The AR Gallery is recognizable for mobile devices and can be seen by opening the app and aiming the camera of mobile phone or tablet at a flat surface. The images changes according to the movements of the mobile device used for viewing.
 
 ## 🌎 Released Android Application:
-https://gofile.io/d/7lXa2H
+https://gofile.io/d/a5IYJS
 
 ## 📽 Sample Demo:
 
@@ -17,13 +17,12 @@ https://gofile.io/d/7lXa2H
 ## 🏗 Built With:
 - Unity 2017.4.26f1 or later.
 - AR Core.
-- Svrf SDK for Unity plugin.
 - Android SDK 7.0 (API Level 24) or later.
-- Java.
+- Kotlin.
 
 ## 🧪 Steps to Build locally:
 - Open Android Studio IDE.
-- Clone with `git clone https://github.com/Akash-Ramjyothi/Filter-Inator`.
+- Clone with `git clone https://github.com/Akash-Ramjyothi/AR-Gallery`.
 - Select whether to run on Android Emulator or Physical Device connected with USB.
 - Run the application with `gradle assembleDebug` on command line.
 
@@ -32,7 +31,7 @@ https://gofile.io/d/7lXa2H
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 [![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
-- Take a look at the Existing [Issues](https://github.com/Akash-Ramjyothi/Filter-Inator/issues) or create your own Issues!
+- Take a look at the Existing [Issues](https://github.com/Akash-Ramjyothi/AR-Gallery/issues) or create your own Issues!
 - Wait for the Issue to be assigned to you after which you can start working on it.
 - Fork the Repo and create a Branch for any Issue that you are working upon.
 - Create a Pull Request which will be promptly reviewed and suggestions would be added to improve it.
@@ -51,7 +50,7 @@ https://gofile.io/d/7lXa2H
 </p>
 
 ## 🌐 References Used:
-- https://docs.svrf.com/recipes/face-filter-android-app/
-- https://www.infoq.com/articles/android-face-filter-banuba-sdk/
-- https://www.youtube.com/watch?v=3Zu9Bd2Pwg4
-- https://heartbeat.fritz.ai/creating-an-android-app-with-snapchat-style-filters-in-7-steps-using-firebases-ml-kit-e79946e99688
+- https://www.studiomaslow.com/augmentedexhibit-en
+- https://www.freecodecamp.org/news/how-to-build-an-augmented-reality-android-app-with-arcore-and-android-studio-43e4676cb36f/
+- https://www.youtube.com/watch?v=1lu4PenfVWc
+- https://www.youtube.com/watch?v=MtiUx_szKbI
